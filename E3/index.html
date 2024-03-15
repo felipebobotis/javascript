@@ -1,0 +1,36 @@
+Usuario
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document</title>
+    <script>
+      function retornaNome() {
+          let nome = document.getElementById("nome").value;
+          let altura = document.getElementById("altura").value;
+          let idade = document.getElementById("idade").value;
+  
+          let nomeCompleto = document.getElementById("nomeCompleto");
+  
+          nomeCompleto.innerText= `Dados registrado  : Seu nome é: ${nome}, Sua idade é: ${idade}, Sua altura é: ${altura}mts`;
+
+      }
+      
+    </script>
+  </head>
+  <body>
+    <form>
+      <p>
+        <label>Nome: <input type="text" id="nome" /></label>
+      </p>
+      <p>
+        <label>Idade: <input type="text" id="idade" /></label>
+      </p>
+      <p>
+        <label>Altura <input type="text" id="altura" /></label>
+      </p>
+      <button type="button" onclick="retornaNome()">Enviar</button>
+    </form>
+    <p id="nomeCompleto"></p>
+  </body>
+</html> 
